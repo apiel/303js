@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>webkitAudio test</title>
+    <style>
+      div.knobcontainer {
+        width:32px;
+        display:inline-block;
+        background:#abc;
+      }
+
+      div.knob {
+        background-image:url('knob.png');
+        width:32px;
+        height:32px;
+      }
+    </style>
+    <script src="303.js"></script>
+  </head>
+  <body id='body'>
+    <button onclick="playpause()" id="playbutton">play</button>
+    cutoff <input type="range" min="0" max="1" value="0.5" step="0.001" id="cutoff" />
+    reso <input type="range" min="0" max="1" value="0.7" step="0.001" id="reso" />
+    envmod <input type="range" min="0" max="1" value="0.4" step="0.001" id="envmod" />
+  </body>
+</html>
